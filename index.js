@@ -136,4 +136,6 @@ io.on('connection', async function (socket) {
   })
 })
 
-server.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${9090}`));
+const port  = process.env.PORT || 9090
+
+server.listen(port, () => console.log(`Listening on port ${9090}`));
